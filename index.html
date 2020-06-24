@@ -1,550 +1,809 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Hey, This is SidG!</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+	<title>Hi, I am Siddharth Garg, AI Engineer, Full Stack Developer, CS Junior - Personal Portfolio </title>
+	<!--fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
+		type='text/css'>
+	<link
+		href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+		rel='stylesheet' type='text/css'>
+	<!--//fonts-->
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+	<script src="js/typed.min.js"></script>
+	<link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Kong Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //for-mobile-apps -->
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- js -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: DevFolio
-    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
-<body id="page-top">
+<body>
+	<!-- banner -->
+	<div id="preloader">
+		<div id="status"><img src="images/preloader.gif" alt=""></div>
+	</div>
+	<script>
+		$(window).on('load', function() { // makes sure the whole site is loaded 
+			$('#status').fadeOut(); // will first fade out the loading animation 
+			$('#preloader').delay(500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+			$('body').delay(500).css({'overflow':'visible'});
+		})
+	</script>
+	<nav class="navbar">
+		<span class="navbar-toggle" id="js-navbar-toggle">
+			<i style="font-size:24px" class="fa">&#xf0c9;</i>
+		</span>
+		<a href="files/cv.pdf" class="logo"><span>Download</span> Resume</a>
+		<ul class="main-nav" id="js-menu">
+			<li>
+				<a href="#home" class="nav-links">Home</a>
+			</li>
+			<li>
+				<a href="#about" class="nav-links">About Me</a>
+			</li>
+			<li>
+				<a href="#work" class="nav-links">My 	Work</a>
+			</li>
+			<li>
+				<a href="#contact" class="nav-links">Contact Me</a>
+			</li>
+			<!-- <li>
+				<a href="#" class="nav-links">Blog</a>
+			</li> -->
+		</ul>
+	</nav>
+	<script>
+		let mainNav = document.getElementById("js-menu");
+		let navBarToggle = document.getElementById("js-navbar-toggle");
 
-  <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Skills</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Blog</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="files/cv.pdf">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--/ Nav End /-->
+		navBarToggle.addEventListener("click", function () {
+			mainNav.classList.toggle("active");
+		});
 
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <p class="display-6 color-d">Hello, world!</p>
-          <h1 class="intro-title mb-4">I am Siddharth Garg</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Developer,Tech Enthusiast,Curious,Computer Science Student,I &#10084; ML</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/ Intro Skew End /-->
+		function checkScroll() {
+			var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
-  <section id="about" class="about-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div class="about-img">
-                      <img src="img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Siddharth Garg</span></p>
-                      <p><span class="title-s">Profile: </span> <span>ML, Backend developer</span></p>
-                      <p><span class="title-s">Email: </span> <span>i@siddharthgarg.in</span></p>
-                      <p><span class="title-s">Phone: </span> <span>+91 7690896969</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>Python</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Backend (Django/Flask)</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Tensorflow</span> <span class="pull-right">70%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>Frontend</span> <span class="pull-right">75%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      About me
-                    </h5>
-                  </div>
-                  <p class="lead">
-                    A crazy inquisitive child from start, have been fiddling around with tech from as long as I remember. 
-                  </p>
-                  <p class="lead">
-                    Marketing Lead at ERIDE NGO, Vellore.
-                    Design Head at Mozilla Firefox VIT. 
-                    Currently pursuing Bachelors of Technology, CSE (with Bioinf.) from VIT, Vellore.
-                  </p>
-                  <p class="lead">
-                    Creating Python scripts, Neural Networks and just bodging around with different technologies are my hobbies along 
-                    with Competitive Coding and attending hackathons.
-                  </p>
-                  <p class="lead">
-                    Always looking forward to new learning and working opportunities. :)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+			if ($(window).scrollTop() > startY) {
+				$('.navbar').removeClass("top");
+				$('.navbar').addClass("scrolled");
+				$('.navbar-toggle').css('color: rgba(0,0,0,1)')
+			} else {
+				$('.navbar').addClass("top");
+				$('.navbar').removeClass("scrolled");
+				$('.navbar-toggle').css('color: rgba(82, 237, 199, 0.5)')
+			}
+		}
 
-  <!--/ Section Services Star /-->
-  <section id="service" class="services-mf route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Tech Stack
-            </h3>
-            <p class="subtitle-a">
-              As a self learner I know
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-social-python"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Python</h2>
-              <p class="s-description text-center">
-                Have done everything using it from creating automation scripts to machine learning, from backend to  Competitive Coding. 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Backend</h2>
-              <p class="s-description text-center">
-                 Have gained knowledge of
-                PHP, Flask and Django as backend technologies
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">C++</h2>
-              <p class="s-description text-center">
-                Plenty of experience with C++, I have made projects out of it. Started loving it just after grasping STLs.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-social-html5"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Frontend</h2>
-              <p class="s-description text-center">
-                I started my journey with it in 11th Grade, Competed HTML, CSS & Javacript MOOC from HKUST.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Tensorflow</h2>
-              <p class="s-description text-center">
-                I have recently started to work with it, have completed a few short courses online and made some mini projects.
-                Its the field Im currently exploring.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-cloud"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Cloud Computing</h2>
-              <p class="s-description text-center">
-                Setting up media servers to basic cronjobs, Gcloud has helped me a lot throughout.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section Services End /-->
+		if ($('.navbar').length > 0) {
+			$(window).on("scroll load resize", function () {
+				checkScroll();
+			});
+		}
+	</script>
+	<div class='header' id="home">
+		<div class="header-text">
+			<h3>Hello, World!</h3> <br>
+			<h1>I am Siddharth Garg</h1> <br>
+			<h3 class="intro-subtitle"><span class="text-slider-items">Developer,AI Engineer,Budding Technical
+					Writer,Computer Science Junior</span><strong class="text-slider"></strong></h3>
+		</div>
 
-  <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">450</p>
-              <span class="counter-text">WORKS COMPLETED</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">15</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">550</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">36</p>
-              <span class="counter-text">AWARD WON</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
+	</div>
 
-  <!--/ Section Portfolio Star /-->
-  <!-- <section id="work" class="portfolio-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Portfolio
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-1.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-2.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-3.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-4.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-5.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/work-6.jpg" alt="" class="img-fluid">
-              </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section> -->
-  <!--/ Section Portfolio End /-->
+	<script>
+		if ($('.text-slider').length == 1) {
+			var typed_strings = $('.text-slider-items').text();
+			var typed = new Typed('.text-slider', {
+				strings: typed_strings.split(','),
+				typeSpeed: 80,
+				loop: true,
+				backDelay: 1100,
+				backSpeed: 30
+			});
+		}
+	</script>
+	<!--/header-banner-->
+	<!--about-->
+	<div class="about text-center" id="about">
+		<div class="container">
+			<h3>ABOUT ME</h3>
+			<div class="strip text-center"><img src="images/about.png" alt=" " /></div>
+			<p>Challenging puzzles, deep thoughts and innovative ideas fuel my excitement. Love of computers, AI, design
+				all comes
+				from a single source, an urge to implement my creativity and logical reasoning. I'm a curious, wandering
+				mind
+				finding it's way and growing as I go..
+			</p>
+			<p>
+				Currently interning as Deep learning Engineer at The Symbionic Company working to make functional
+				prostheses, an affordable reality. Computer Vision Intern at
+				FindMind Analytics working in processing and securing sensitive documents using AI technologies.
+			</p>
+			<p> Marketing Lead at ERIDE NGO, Vellore. Design Head at Mozilla Firefox VIT. Currently pursuing Bachelors
+				of Technology, CSE (with Bioinf.) from VIT, Vellore.
+				Creating Python scripts, Neural Networks and just bodging around with different technologies are my
+				hobbies along with Competitive Coding and attending hackathons.</p>
+
+				<p>Always looking forward to new learning and working opportunities. :) </p>
+
+			<ul>
+				<li><a class="fb" href="https://www.facebook.com/realsidg"></a></li>
+				<li><a class="twit" href="https://github.com/realsidg"></a></li>
+				<li><a class="in" href="https://www.linkedin.com/in/sidg510/"></a></li>
+				<li><a class="drib" href="https://medium.com/@realsidg"></a></li>
+				<!-- <li><a class="goog" href="#"></a></li>
+				<li><a class="pin" href="#"></a></li> -->
+			</ul>
+		</div>
+	</div>
+	<!--//about-->
+	<div class="about-back"></div>
+	<!--my skill-->
+	<div class="my-skills text-center" id="skills">
+		<div class="container">
+			<h3>TECH STACK</h3>
+			<div class="strip text-center"><img src="images/skill.png" alt=" " /></div>
+			<div class="skill-grids">
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-1"></div>
+					<p class="skill-name">Tensorflow</p>
+				</div>
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-2"></div>
+					<p class="skill-name">Python</p>
+				</div>
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-3"></div>
+					<p class="skill-name">PyTorch</p>
+				</div>
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-4"></div>
+					<p class="skill-name">C++</p>
+				</div>
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-5"></div>
+					<p class="skill-name">Django/Flask</p>
+				</div>
+				<div class="col-md-2 skills-grid text-center">
+					<div class="circle" id="circles-6"></div>
+					<p class="skill-name">Cloud Computing</p>
+				</div>
+				<div class="clearfix"> </div>
+				<script type="text/javascript" src="js/circles.js"></script>
+				<script>
+					function makeCircles() {
+						var colors = [
+							['#6ed4c0', '#ffffff'],
+							['#6ed4c0', '#ffffff'],
+							['#6ed4c0', '#ffffff'],
+							['#6ed4c0', '#ffffff'],
+							['#6ed4c0', '#ffffff'],
+							['#6ed4c0', '#ffffff']
+						];
+						var percentages = [0, 90, 95, 85, 85, 80, 80]
+						for (var i = 1; i < 7; i++) {
+							var child = document.getElementById('circles-' + i),
+								percentage = percentages[i];
+
+							Circles.create({
+								id: child.id,
+								percentage: percentage,
+								radius: 80,
+								width: 10,
+								number: percentage / 1,
+								text: '%',
+								colors: colors[i - 1]
+							});
+						}
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+	<!--//my skill-->
+	<div class="my-skill-back"></div>
+	<!--education-->
+	<div class="education text-center">
+		<div class="container">
+			<div class="edu-info">
+				<h3>EDUCATION</h3>
+			</div>
+			<div class="strip text-center"><img src="images/edu.png" alt=" " /></div>
+			<div class="edu-grids">
+				<div class="col-md-4 edu-grid">
+					<p>2007 - 2015</p><span>Graduated</span>
+					<img src="images/arrow.png" alt="" />
+					<div class="edu-border">
+						<div class="edu-grid-master">
+							<h3>All India Secondary School Certificate (AISSC)</h3>
+							<h4>Delhi Public School, Agra</h4>
+						</div>
+						<div class="edu-grid-info">
+							<!-- <img src="images/dpsa_logo.png" style="position:inherit" alt="DPS Agra Logo"> -->
+							<h5>One of the best schools in Agra. Spent Most of my childhood at this amazing school, full of opportunities</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 edu-grid">
+					<p>2015 - 2017</p><span>Graduated</span>
+					<img src="images/arrow.png" alt="" />
+					<div class="edu-border">
+						<div class="edu-grid-master">
+							<h3>All India Senior School Certificate Examination
+								(AISSCE)</h3>
+							<h4>Delhi Public School RK Puram</h4>
+						</div>
+						<div class="edu-grid-info">
+							<h5>Great competitive environment in Delhi.
+								Maths, Science with Comp Science and Multimedia
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 edu-grid">
+					<p>2018-2022</p><span>Ongoing</span>
+					<img src="images/arrow.png" alt="" />
+					<div class="edu-border">
+						<div class="edu-grid-master">
+							<h3>Btech, Computer Science with Spec. in Bioinformatics</h3>
+							<h4>VIT Vellore (Institute of Eminence)</h4>
+						</div>
+						<div class="edu-grid-info">
+							<h5>Trying to discover apex of my growth rate here, with great peers and work opportunities</h5>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+	</div>
+	<!--//education-->
+	<div class="strip-border">
+		<p></p>
+	</div>
+	<!--work-->
+	<div id="work" class="work-experience text-center">
+
+		<div class="container">
+			<div class="work-info">
+				<h3>WORK EXPERIENCE</h3>
+			</div>
+			<div class="strip text-center"><img src="images/work.png" alt=" " /></div>
+			
+			<div class="work-grids">
+				
+				<div class="col-md-4 w-grid">
+					<div class="work-grid">
+						<h3>2019 - Now</h3>
+						<div class="work-grid-info">
+							<h4>Mozilla Firefox Club, VIT</h4>
+							<h5>Creative Head, Board Member</h5>
+							<p>Promoting open source programming, heading the student chapter
+								provides me both mentoring and management experience. MFC has 
+								is involved in activities that help students motivated to contribute
+								to open source.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 w-grid">
+					<div class="work-grid">
+						<h3>2020 - Now</h3>
+						<div class="work-grid-info">
+							<h4>The Symbionic Company</h4>
+							<h5>Deep Learning Lead</h5>
+							<p>
+								The Symbionic is a startup which aims to make 3D printed prosthetic
+								arms for upper elbow amputees more affordable, user friendly and
+								customizable to wear. Im working on automating the grip patterns 
+								formed by the prosthetic in according to the object user tries to hold
+								using object detection.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 w-grid">
+					<div class="work-grid">
+						<h3>2019 - 2020</h3>
+						<div class="work-grid-info">
+							<h4>Computer Society of India, VIT</h4>
+							<h5>Senior Core Comittee Member, Technical</h5>
+							<p>From organizing hackathons, leading workshops and looking 
+								around CTFs, with amazingly talented and friendly people 
+								I was fortunate enough to work with them on projects exposing
+								students to new concepts while pushing my own capablities. 
+							</p>
+						</div>
+					</div>
+				</div>
+				<span style="display: inline-block;"><br>
+				<div class="col-md-4 w-grid">
+					<div class="work-grid">
+						<h3>2018 - Now</h3>
+						<div class="work-grid-info">
+							<h4>ERIDE</h4>
+							<h5>Volunteer, Marketing Lead, Vellore Executive Board</h5>
+							<p>Empowering Rural India with Digital Education (ERIDE)
+								aims on delivering utmost essential digital literacy to
+								underpriviliged sections of our society. Joined as a freshman,
+								ERIDE has been part of my college journey from teaching kids in
+								orphanages, community centres to leading the NGO as a board member, 
+								it has been a wonderful experience. 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 w-grid">
+					<div class="work-grid">
+						<h3>2020 - Now</h3>
+						<div class="work-grid-info">
+							<h4>FindMind Analytics</h4>
+							<h5>Computer Vision Engineer</h5>
+							<p>
+								I am trusted with the tasks of processing and securing sensitive 
+								identity documents like aadhaar and PAN cards using Optical Charachter Recognition, 
+								Text detection and other Image Processing techniques. 
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//work-->
+	<div class="services-back"></div>
+
+	<!--services-->
+	<div class="services text-center" id="services">
+		<div class="container">
+			<div class="ser-info">
+				<h3>DOMAINS</h3>
+			</div>
+			<div class="strip text-center"><img src="images/ser.png" alt=" " /></div>
+			<div class="ser-grids">
+				<div class="col-md-3 ser-grid">
+					<div class="ser-imagea"></div>
+					<h3>Deep Learning</h3>
+					<p>With IBM professional certification in AI engineering,
+						multiple specializations, and immence experience, it 
+						is my core competency. From Tensorflow to PyTorch, Object 
+						Detection to NLP, I have experience in all. 
+					</p>
+				</div>
+				<div class="col-md-3 ser-grid">
+					<div class="ser-imageb"></div>
+					<h3>Graphic Design</h3>
+					<p>Sometimes you find things by looking for them,
+						sometimes things find you. My relationship with graphic design is
+						certainly the latter. Being Creative Head of MFC, and ex designer 
+						at ERIDE, Im confident and skilled in this domain.
+					</p>
+				</div>
+				<div class="col-md-3 ser-grid">
+					<div class="ser-imagec"></div>
+					<h3>Competitive Programming</h3>
+					<p>
+						Securing first position in intra college coding events 
+						namely Reverse Coding and Jumble Ladder. Competitive coding
+						hits both my love of reasoning and admiration of tech. 
+					</p>
+				</div>
+				<div class="col-md-3 ser-grid">
+					<div class="ser-imaged"></div>
+					<h3>Data Science</h3>
+					<p>
+						Amazing feeling of finding patterns in Data feels no less than
+						putting together a jigsaw puzzle. Using clustering algorithms for
+						customer segmentation or predicting future prices, I can do it all. 
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//services-->
+	<!--portfolio-->
+	<div class="gallery-section text-center" id="portfolio">
+		<div class="container">
+			<h3>CERTIFICATIONS</h3>
+			<div class="strip text-center"><img src="images/port.png" alt=" " /></div>
+			<div class="gallery-grids">
+				<div class="top-gallery">
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert1.png" class="swipebox"><img src="images/cert1.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>IBM AI Engineering Professional Certification</h4>
+								<p>IBM</p>
+								<div class="button"><a href="images/cert1.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert2.png" class="swipebox"><img src="images/cert2.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>IBM Applied AI</h4>
+								<p>IBM</p>
+								<div class="button"><a href="images/cert2.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert3.png" class="swipebox"><img src="images/cert3.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Convolutional Neural Networks</h4>
+								<p>deeplearning.ai</p>
+								<div class="button"><a href="images/cert3.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert4.png" class="swipebox"><img src="images/cert4.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Structuring Machine Learning Projects</h4>
+								<p>deeplearning.ai</p>
+								<div class="button"><a href="images/cert4.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert5.png" class="swipebox"><img src="images/cert5.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Sequence Models</h4>
+								<p>deeplearning.ai</p>
+								<div class="button"><a href="images/cert5.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert6.png" class="swipebox"><img src="images/cert6.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Improving Deep Neural networks</h4>
+								<p>deeplearning.ai</p>
+								<div class="button"><a href="images/cert6.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<span style="display: inline-block; width: 100%;">
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert7.png" class="swipebox"><img src="images/cert7.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Neural Networks and Deep Learning</h4>
+								<p>deeplearning.ai</p>
+								<div class="button"><a href="images/cert7.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert8.png" class="swipebox"><img src="images/cert8.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Deep Neural networks with PyTorch</h4>
+								<p>IBM</p>
+								<div class="button"><a href="images/cert8.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert9.png" class="swipebox"><img src="images/cert9.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Building Deep Learning Models with Tensorflow</h4>
+								<p>IBM</p>
+								<div class="button"><a href="images/cert9.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="clearfix"> </div>
+				</div>
+				<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script>
+				<script type="text/javascript">
+					jQuery(function ($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+	<!--//portfolio-->
+	<!--process-->
+	<div class="process text-center">
+		<div class="container">
+			<h3>PROCESS</h3>
+			<div class="strip text-center"><img src="images/pro.png" alt=" " /></div>
+			<div class="process-girds">
+				<div class="col-md-2 process-pad">
+					<div class="process-gird">
+						<div class="process-imagea"></div>
+						<p>IDEA</p>
+						<img src="images/6.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-2 process-pad">
+					<div class="process-gird">
+						<div class="process-imageb"></div>
+						<p>CONCEPT</p>
+						<img class="pro-imga" src="images/6.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-2 process-pad">
+					<div class="process-gird">
+						<div class="process-imagec"></div>
+						<p>DESIGN</p>
+						<img class="pro-img" src="images/6.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-2 process-pad">
+					<div class="process-gird">
+						<div class="process-imaged"></div>
+						<p>DEVELOP</p>
+						<img class="pro-imgb" src="images/6.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-2 process-pad">
+					<div class="process-gird">
+						<div class="process-imagee"></div>
+						<p>TEST</p>
+						<img src="images/6.png" alt="" />
+					</div>
+				</div>
+				<div class="col-md-2 process-pad">
+					<div class="process-gird">
+						<div class="process-imagef"></div>
+						<p>LAUNCH</p>
+
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//process-->
+	<div class="process-back"></div>
+	<!--testimonials-->
+	<div class="testimonials" id="testimonial">
+		<div class="container">
+			<h3>PROJECTS</h3>
+			<div class="strip text-center"><img src="images/test.png" alt=" " /></div>
+			<!-- responsiveslides -->
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+				// You can also use "$(window).load(function() {"
+				$(function () {
+					// Slideshow 4
+					$("#slider3").responsiveSlides({
+						auto: true,
+						pager: false,
+						nav: true,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+							$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});
+				});
+			</script>
+			<!-- responsiveslides -->
+			<div id="top" class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="test-banner">
+							<div class="">
+								<h2>TB Saathi</h2><br>
+								
+								<p>
+									TB Saathi (Tuberculosis Diagnosis using neural networks and reporting tool). 
+									Taking input as XRay images and symptoms, probability of TB is analyzed and subsequentmeasures taken in order to help under priviliged patients.
+								</p>
+								<br>
+
+								<p style="font-weight: bold;"><a href="files/TB_Saathi.pdf">Project Report</a></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="test-banner">
+							<div class="">
+								<h2>News reporting analysis using NLP</h2><br>
+								
+								<p>
+									Sentiment Analysis and Topic Modelling of primetimeNews-hour Debates from different news channels. 
+									Scripts of Different new channels reporting news on a single day is collected and using NLP,different patterns and styles of news reporting by different anchors is parsed.	
+								</p>
+								<br>
+								
+								<p style="font-weight: bold;"><a href="files/NLP_Ayodhya.pdf">Project Report</a></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="test-banner">
+							<div class="">
+								<h2>Extracting value of noised video dashboard of an aeroplaneusing video processing</h2><br>
+								
+								<p>
+									A video of the dashboard in an aeroplane's cockpit is given which has a lot of noise,Featureshavetobeextractedfromitandthenexportedtoacsvfilewith respect to time
+								</p>
+								<br>
+								
+								<p style="font-weight: bold;"><a href="files/NLP_Ayodhya.pdf">Project Report</a></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="test-banner">
+							<div class="">
+								<h2>Customer Segmentation using RFM technique</h2><br>
+								
+								<p>
+									Given a dataset of transaction history of products and customers. The dataset is cleaned and usable features are extracted using EDA.
+									RFM technique is applied in order to find different segmentation of customers on the basis of expenditure patterns, time patterns and total money spent.	
+								</p>
+								<br>
+								
+								<p style="font-weight: bold;"><a href="https://github.com/realsidg/customer_segmentation">Project Link</a></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="test-banner">
+							<div class="">
+								<h2>Minesweeper construction & solving algorithm</h2><br>
+								
+								<p>
+									This project contains two modules, the game and the solver. The game implementation presents a command line interface for the user to interact with the puzzle and solve it. The solver serves as a hint for the player solving the puzzle when needed. The solver essentially  analyzes  the  same  grid  shown  to  the  user  and  makes  an  optimum move which reveals a covered tile.
+								</p>
+								<br>
+								
+								<p style="font-weight: bold;"><a href="https://github.com/realsidg/Minesweep">Project Link</a></p>
+								<p style="font-weight: bold;"><a href="files/minesweeper.pdf">Project Report</a></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
 
 
-  <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Get in Touch
-                    </h5>
-                  </div>
-                  <div class="more-info">
-                    <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> Mens Hostel, VIT Vellore, Katpadi 632014</li>
-                      <li><span class="ion-ios-telephone"></span> +91-7690896969</li>
-                      <li><span class="ion-email"></span> i@siddharthgarg.in </li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a href="https://github.com/realsidg"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
-                      <li><a href="https://www.linkedin.com/in/sidg510/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-                      <li><a href="https://www.facebook.com/realsidg"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section Contact-footer End /-->
+		</div>
+	</div>
+	<!--testimonials-->
+	
+	<div class="client-back"></div>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="contact-info text-center">
+				<h3>CONTACT</h3>
+				<div class="strip text-center"><img src="images/con1.png" alt=" " /></div>
+			</div>
+			<div class="contact-grids">
+				<div class="col-md-5 contact-left">
+					<h3>Say Hi to Me</h3>
+					<div class="stripb"></div>
+					<ul>
+						<li>Vellore Institute of Technology </li>
+						<li>Vellore, Tamil Nadu </li>
+						<li>India</li>
+						<li><a href="mailto:i@siddharthgarg.in">i@siddharthgarg.in</a></li>
+						<li><a href="#">www.siddharthgarg.in</a></li>
+					</ul>
+				</div>
+				<div class="col-md-7 contact-right">
+					<h3>Drop Me A Line</h3>
+					<div class="stripb"></div>
+					<form action="https://mailthis.to/realsidg" method="POST" >
+						<input type="text" value="Name" name="name" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Name';}" required="">
+						<input type="text" value="E-mail" name="_replyto" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'E-mail';}" required="">
+						<textarea name="message" type="text" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
+						<input type="hidden" name="_subject" value="Contact form submitted">
+						<input type="hidden" name="_after" value="https://www.siddharthgarg.in/">
+						<input type="submit" value="SEND">
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//contact-->
+	<div class="footer-top"></div>
+	<!--resume-->
+	<div class="resume text-center">
+		<div class="container">
+			<div class="strip text-center"><a href="#"><img src="files/cv.pdf" alt=" " /></a></div>
+			<div class="down"><a href="files/cv.pdf">Download My Resume</a></div>
+		</div>
+	</div>
+	<!--//resume-->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+			/* 	
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};*/
 
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
 
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+		drawn=false;
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(window).scrollTop() + $(window).height() >= $('#skills').offset().top ) {
+					//if (!$('#skills').attr('loaded')) {
+					//	$('#skills').attr('loaded', true);
+					if (drawn!=true) {
+						makeCircles();
+						drawn = true;
+					}
+					//}
+				}
+			});
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
 </body>
+
 </html>
