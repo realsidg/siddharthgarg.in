@@ -2667,6 +2667,9 @@ border:none;
 	  float: left;
 	  width: 17%;
 	}
+	.logo span{
+		display: none;
+	}
 	.banner-right h1 {
 	  font-size: 26px;
 	}
