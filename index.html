@@ -53,7 +53,16 @@
 
 <body>
 	<!-- banner -->
-
+	<div id="preloader">
+		<div id="status"><img src="images/preloader.gif" alt=""></div>
+	</div>
+	<script>
+		$(window).on('load', function() { // makes sure the whole site is loaded 
+			$('#status').fadeOut(); // will first fade out the loading animation 
+			$('#preloader').delay(500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+			$('body').delay(500).css({'overflow':'visible'});
+		})
+	</script>
 	<nav class="navbar">
 		<span class="navbar-toggle" id="js-navbar-toggle">
 			<i style="font-size:24px" class="fa">&#xf0c9;</i>
@@ -152,12 +161,12 @@
 				<p>Always looking forward to new learning and working opportunities. :) </p>
 
 			<ul>
-				<li><a class="fb" href="#"></a></li>
-				<li><a class="twit" href="#"></a></li>
-				<li><a class="in" href="#"></a></li>
-				<li><a class="drib" href="#"></a></li>
-				<li><a class="goog" href="#"></a></li>
-				<li><a class="pin" href="#"></a></li>
+				<li><a class="fb" href="https://www.facebook.com/realsidg"></a></li>
+				<li><a class="twit" href="https://github.com/realsidg"></a></li>
+				<li><a class="in" href="https://www.linkedin.com/in/sidg510/"></a></li>
+				<li><a class="drib" href="https://medium.com/@realsidg"></a></li>
+				<!-- <li><a class="goog" href="#"></a></li>
+				<li><a class="pin" href="#"></a></li> -->
 			</ul>
 		</div>
 	</div>
@@ -236,44 +245,45 @@
 			<div class="strip text-center"><img src="images/edu.png" alt=" " /></div>
 			<div class="edu-grids">
 				<div class="col-md-4 edu-grid">
-					<p>2012 - 2013</p><span>Graduated</span>
+					<p>2007 - 2015</p><span>Graduated</span>
 					<img src="images/arrow.png" alt="" />
 					<div class="edu-border">
 						<div class="edu-grid-master">
-							<h3>MASTER DEGREE OF COMPUTER SCIENCE</h3>
-							<h4>Oxford University</h4>
+							<h3>All India Secondary School Certificate (AISSC)</h3>
+							<h4>Delhi Public School, Agra</h4>
 						</div>
 						<div class="edu-grid-info">
-							<h5>This is Photoshop's version Lorem Ipsum.
-								Well, the way they make shows is, they make one show.</h5>
+							<!-- <img src="images/dpsa_logo.png" style="position:inherit" alt="DPS Agra Logo"> -->
+							<h5>One of the best schools in Agra. Spent Most of my childhood at this amazing school, full of opportunities</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 edu-grid">
-					<p>2012 - 2013</p><span>Graduated</span>
+					<p>2015 - 2017</p><span>Graduated</span>
 					<img src="images/arrow.png" alt="" />
 					<div class="edu-border">
 						<div class="edu-grid-master">
-							<h3>MASTER DEGREE OF COMPUTER SCIENCE</h3>
-							<h4>Oxford University</h4>
+							<h3>All India Senior School Certificate Examination
+								(AISSCE)</h3>
+							<h4>Delhi Public School RK Puram</h4>
 						</div>
 						<div class="edu-grid-info">
-							<h5>This is Photoshop's version Lorem Ipsum.
-								Well, the way they make shows is, they make one show.</h5>
+							<h5>Great competitive environment in Delhi.
+								Maths, Science with Comp Science and Multimedia
+							</h5>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 edu-grid">
-					<p>2012 - 2013</p><span>Graduated</span>
+					<p>2018-2022</p><span>Ongoing</span>
 					<img src="images/arrow.png" alt="" />
 					<div class="edu-border">
 						<div class="edu-grid-master">
-							<h3>MASTER DEGREE OF COMPUTER SCIENCE</h3>
-							<h4>Oxford University</h4>
+							<h3>Btech, Computer Science with Spec. in Bioinformatics</h3>
+							<h4>VIT Vellore (Institute of Eminence)</h4>
 						</div>
 						<div class="edu-grid-info">
-							<h5>This is Photoshop's version Lorem Ipsum.
-								Well, the way they make shows is, they make one show.</h5>
+							<h5>Trying to discover apex of my growth rate here, with great peers and work opportunities</h5>
 						</div>
 					</div>
 				</div>
@@ -294,43 +304,83 @@
 				<h3>WORK EXPERIENCE</h3>
 			</div>
 			<div class="strip text-center"><img src="images/work.png" alt=" " /></div>
+			
 			<div class="work-grids">
+				
 				<div class="col-md-4 w-grid">
 					<div class="work-grid">
-						<h3>2013 - Now</h3>
+						<h3>2019 - Now</h3>
 						<div class="work-grid-info">
-							<h4>Google</h4>
-							<h5>Visual Designer</h5>
-							<p>Now that there is the Tec-9, a crappy spray gun from South Miami.
-								This gun is advertised as the most popular gun in American crime.
-								Do you believe that shit? It actually says that in the little book
-								that comes with it: the most popular gun in</p>
+							<h4>Mozilla Firefox Club, VIT</h4>
+							<h5>Creative Head, Board Member</h5>
+							<p>Promoting open source programming, heading the student chapter
+								provides me both mentoring and management experience. MFC has 
+								is involved in activities that help students motivated to contribute
+								to open source.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 w-grid">
+					<div class="work-grid">
+						<h3>2020 - Now</h3>
+						<div class="work-grid-info">
+							<h4>The Symbionic Company</h4>
+							<h5>Deep Learning Lead</h5>
+							<p>
+								The Symbionic is a startup which aims to make 3D printed prosthetic
+								arms for upper elbow amputees more affordable, user friendly and
+								customizable to wear. Im working on automating the grip patterns 
+								formed by the prosthetic in according to the object user tries to hold
+								using object detection.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 w-grid">
+					<div class="work-grid">
+						<h3>2019 - 2020</h3>
+						<div class="work-grid-info">
+							<h4>Computer Society of India, VIT</h4>
+							<h5>Senior Core Comittee Member, Technical</h5>
+							<p>From organizing hackathons, leading workshops and looking 
+								around CTFs, with amazingly talented and friendly people 
+								I was fortunate enough to work with them on projects exposing
+								students to new concepts while pushing my own capablities. 
+							</p>
+						</div>
+					</div>
+				</div>
+				<span style="display: inline-block;"><br>
+				<div class="col-md-4 w-grid">
+					<div class="work-grid">
+						<h3>2018 - Now</h3>
+						<div class="work-grid-info">
+							<h4>ERIDE</h4>
+							<h5>Volunteer, Marketing Lead, Vellore Executive Board</h5>
+							<p>Empowering Rural India with Digital Education (ERIDE)
+								aims on delivering utmost essential digital literacy to
+								underpriviliged sections of our society. Joined as a freshman,
+								ERIDE has been part of my college journey from teaching kids in
+								orphanages, community centres to leading the NGO as a board member, 
+								it has been a wonderful experience. 
+							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 w-grid">
 					<div class="work-grid">
-						<h3>2013 - Now</h3>
+						<h3>2020 - Now</h3>
 						<div class="work-grid-info">
-							<h4>Google</h4>
-							<h5>Visual Designer</h5>
-							<p>Now that there is the Tec-9, a crappy spray gun from South Miami.
-								This gun is advertised as the most popular gun in American crime.
-								Do you believe that shit? It actually says that in the little book
-								that comes with it: the most popular gun in</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 w-grid">
-					<div class="work-grid">
-						<h3>2013 - Now</h3>
-						<div class="work-grid-info">
-							<h4>Google</h4>
-							<h5>Visual Designer</h5>
-							<p>Now that there is the Tec-9, a crappy spray gun from South Miami.
-								This gun is advertised as the most popular gun in American crime.
-								Do you believe that shit? It actually says that in the little book
-								that comes with it: the most popular gun in</p>
+							<h4>FindMind Analytics</h4>
+							<h5>Computer Vision Engineer</h5>
+							<p>
+								I am trusted with the tasks of processing and securing sensitive 
+								identity documents like aadhaar and PAN cards using Optical Charachter Recognition, 
+								Text detection and other Image Processing techniques. 
+							</p>
 						</div>
 					</div>
 				</div>
@@ -345,37 +395,45 @@
 	<div class="services text-center" id="services">
 		<div class="container">
 			<div class="ser-info">
-				<h3>SERVICES</h3>
+				<h3>DOMAINS</h3>
 			</div>
 			<div class="strip text-center"><img src="images/ser.png" alt=" " /></div>
 			<div class="ser-grids">
 				<div class="col-md-3 ser-grid">
 					<div class="ser-imagea"></div>
-					<h3>Web Design</h3>
-					<p>I'm gonna shoot you in the head
-						then and there. Then I'm gonna shoot
-						that bitch in the kneecaps.</p>
+					<h3>Deep Learning</h3>
+					<p>With IBM professional certification in AI engineering,
+						multiple specializations, and immence experience, it 
+						is my core competency. From Tensorflow to PyTorch, Object 
+						Detection to NLP, I have experience in all. 
+					</p>
 				</div>
 				<div class="col-md-3 ser-grid">
 					<div class="ser-imageb"></div>
 					<h3>Graphic Design</h3>
-					<p>I'm gonna shoot you in the head
-						then and there. Then I'm gonna shoot
-						that bitch in the kneecaps.</p>
+					<p>Sometimes you find things by looking for them,
+						sometimes things find you. My relationship with graphic design is
+						certainly the latter. Being Creative Head of MFC, and ex designer 
+						at ERIDE, Im confident and skilled in this domain.
+					</p>
 				</div>
 				<div class="col-md-3 ser-grid">
 					<div class="ser-imagec"></div>
-					<h3>Content Writer</h3>
-					<p>I'm gonna shoot you in the head
-						then and there. Then I'm gonna shoot
-						that bitch in the kneecaps.</p>
+					<h3>Competitive Programming</h3>
+					<p>
+						Securing first position in intra college coding events 
+						namely Reverse Coding and Jumble Ladder. Competitive coding
+						hits both my love of reasoning and admiration of tech. 
+					</p>
 				</div>
 				<div class="col-md-3 ser-grid">
 					<div class="ser-imaged"></div>
-					<h3>Development</h3>
-					<p>I'm gonna shoot you in the head
-						then and there. Then I'm gonna shoot
-						that bitch in the kneecaps.</p>
+					<h3>Data Science</h3>
+					<p>
+						Amazing feeling of finding patterns in Data feels no less than
+						putting together a jigsaw puzzle. Using clustering algorithms for
+						customer segmentation or predicting future prices, I can do it all.  
+					</p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -385,68 +443,90 @@
 	<!--portfolio-->
 	<div class="gallery-section text-center" id="portfolio">
 		<div class="container">
-			<h3>PORTFOLIO</h3>
+			<h3>CERTIFICATIONS</h3>
 			<div class="strip text-center"><img src="images/port.png" alt=" " /></div>
-			<p>You think water moves fast? You should see ice. It moves like it has a mind.
-				Like it knows it killed the world once and got a taste for murder. After the avalanche,
-				it took us a week to climb out. Now, I don't know exactly when we turned on each other,
-				but I know that seven of us survived the slide and only five made it out. Now we took an
-				oath, that I'm breaking now. We said we'd say it was the snow that killed the other two,
-				but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
 			<div class="gallery-grids">
 				<div class="top-gallery">
 					<div class="col-md-4 gallery-grid gallery1">
-						<a href="images/p1.jpg" class="swipebox"><img src="images/p1.jpg" class="img-responsive"
+						<a href="images/cert1.png" class="swipebox"><img src="images/cert1.png" class="img-responsive"
 								alt="/">
 							<div class="textbox">
 								<h4>Project Name</h4>
 								<p>WEB DESIGN</p>
-								<div class="button"><a href="images/p1.jpg" class="swipebox">VIEW</a></div>
+								<div class="button"><a href="images/cert1.png" class="swipebox">VIEW</a></div>
 							</div>
 					</div></a>
 					<div class="col-md-4 gallery-grid gallery1">
-						<a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive"
+						<a href="images/cert2.png" class="swipebox"><img src="images/cert2.png" class="img-responsive"
 								alt="/">
 							<div class="textbox">
 								<h4>Project Name</h4>
 								<p>WEB DESIGN</p>
-								<div class="button"><a href="images/p2.jpg" class="swipebox">VIEW</a></div>
+								<div class="button"><a href="images/cert2.png" class="swipebox">VIEW</a></div>
 							</div>
 					</div></a>
 					<div class="col-md-4 gallery-grid gallery1">
-						<a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive"
+						<a href="images/cert3.png" class="swipebox"><img src="images/cert3.png" class="img-responsive"
 								alt="/">
 							<div class="textbox">
 								<h4>Project Name</h4>
 								<p>WEB DESIGN</p>
-								<div class="button"><a href="images/p3.jpg" class="swipebox">VIEW</a></div>
+								<div class="button"><a href="images/cert3.png" class="swipebox">VIEW</a></div>
 							</div>
 					</div></a>
 					<div class="col-md-4 gallery-grid gallery1">
-						<a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive"
+						<a href="images/cert4.png" class="swipebox"><img src="images/cert4.png" class="img-responsive"
 								alt="/">
 							<div class="textbox">
 								<h4>Project Name</h4>
 								<p>WEB DESIGN</p>
-								<div class="button"><a href="images/p4.jpg" class="swipebox">VIEW</a></div>
+								<div class="button"><a href="images/cert4.png" class="swipebox">VIEW</a></div>
 							</div>
 					</div></a>
 					<div class="col-md-4 gallery-grid gallery1">
-						<a href="images/p5.jpg" class="swipebox"><img src="images/p5.jpg" class="img-responsive"
+						<a href="images/cert5.png" class="swipebox"><img src="images/cert5.png" class="img-responsive"
 								alt="/">
 							<div class="textbox">
 								<h4>Project Name</h4>
 								<p>WEB DESIGN</p>
-								<div class="button"><a href="images/p5.jpg" class="swipebox">VIEW</a></div>
+								<div class="button"><a href="images/cert5.png" class="swipebox">VIEW</a></div>
 							</div>
 					</div></a>
 					<div class="col-md-4 gallery-grid gallery1">
-						<a href="images/p6.jpg" class="swipebox"><img src="images/p6.jpg" class="img-responsive"
+						<a href="images/cert6.png" class="swipebox"><img src="images/cert6.png" class="img-responsive"
 								alt="/">
 							<div class="textbox">
 								<h4>Project Name</h4>
 								<p>WEB DESIGN</p>
-								<div class="button"><a href="images/p6.jpg" class="swipebox">VIEW</a></div>
+								<div class="button"><a href="images/cert6.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<span style="display: inline-block; width: 100%;">
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert7.png" class="swipebox"><img src="images/cert7.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Project Name</h4>
+								<p>WEB DESIGN</p>
+								<div class="button"><a href="images/cert7.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert8.png" class="swipebox"><img src="images/cert8.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Project Name</h4>
+								<p>WEB DESIGN</p>
+								<div class="button"><a href="images/cert8.png" class="swipebox">VIEW</a></div>
+							</div>
+					</div></a>
+					<div class="col-md-4 gallery-grid gallery1">
+						<a href="images/cert9.png" class="swipebox"><img src="images/cert9.png" class="img-responsive"
+								alt="/">
+							<div class="textbox">
+								<h4>Project Name</h4>
+								<p>WEB DESIGN</p>
+								<div class="button"><a href="images/cert9.png" class="swipebox">VIEW</a></div>
 							</div>
 					</div></a>
 					<div class="clearfix"> </div>
@@ -621,12 +701,11 @@
 					<h3>Say Hi to Me</h3>
 					<div class="stripb"></div>
 					<ul>
-						<li>Orchard Park, Long Bennington, </li>
-						<li>Newark, Lincolnshire </li>
-						<li>NG23 5DQ, United Kingdom</li>
-						<li>9876543210</li>
-						<li><a href="mailto:info@example.com">Sebastian@mail.com</a></li>
-						<li><a href="#">www.sebasti.an</a></li>
+						<li>Vellore Institute of Technology </li>
+						<li>Vellore, Tamil Nadu </li>
+						<li>India</li>
+						<li><a href="mailto:i@siddharthgarg.in">i@siddharthgarg.in</a></li>
+						<li><a href="#">www.siddharthgarg.in</a></li>
 					</ul>
 				</div>
 				<div class="col-md-7 contact-right">
@@ -652,7 +731,7 @@
 	<div class="resume text-center">
 		<div class="container">
 			<div class="strip text-center"><a href="#"><img src="files/cv.pdf" alt=" " /></a></div>
-			<div class="down"><a href="#">Download My Resume</a></div>
+			<div class="down"><a href="files/cv.pdf">Download My Resume</a></div>
 		</div>
 	</div>
 	<!--//resume-->
@@ -683,13 +762,17 @@
 				});
 			});
 		});
+		drawn=false;
 		$(document).ready(function () {
 			$(window).scroll(function () {
-				if ($(window).scrollTop() + $(window).height() >= $('#skills').offset().top) {
-					if (!$('#skills').attr('loaded')) {
-						$('#skills').attr('loaded', true);
+				if ($(window).scrollTop() + $(window).height() >= $('#skills').offset().top ) {
+					//if (!$('#skills').attr('loaded')) {
+					//	$('#skills').attr('loaded', true);
+					if (drawn!=true) {
 						makeCircles();
+						drawn = true;
 					}
+					//}
 				}
 			});
 		});

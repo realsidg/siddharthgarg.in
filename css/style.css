@@ -33,6 +33,35 @@ button#showRightPush img {
 	padding-left: 8px;
 }
 
+/* Preloader */
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f1f2f3;
+	/* change if the mask should have another color then white */
+	z-index: 99;
+	/* makes sure it stays on top */
+  }
+  
+  #status {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	/* centers the loading animation horizontally one the screen */
+	top: 50%;
+	/* centers the loading animation vertically one the screen */
+	/* background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif); */
+	/* background-image: url('images/preloader.gif-'); */
+	/* path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px;
+	/* is width and height divided by two */
+  }
 
 /*--/header--*/
 .navbar {
@@ -480,7 +509,7 @@ background: url(../images/port-back.jpg) no-repeat 0px 0px;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	text-align: center;
-	min-height:1404px;
+	min-height:1604px;
     padding: 140px 0 0px 0;
 }
 #portfolio p {
@@ -1177,7 +1206,7 @@ margin-right:0;
 .contact-right form input[type="submit"] {
 color:#2b2b2b;
 font-family: 'Lato', sans-serif;
-  background: url(../images/mess.png) no-repeat 81px 14px;
+  /* background: url(../images/mess.png) no-repeat 81px 14px; */
   width: 49%;
   border-radius: 4px;
   height: 52px;
@@ -1686,7 +1715,7 @@ margin: 12px 0 0 0;
 }
 .coment-form input[type="submit"] {
   font-family: 'Lato', sans-serif;
-  background: url(../images/mess.png) no-repeat 81px 14px;
+  /* background: url(../images/mess.png) no-repeat 81px 14px; */
   width: 49%;
   border-radius: 4px;
   height: 52px;
@@ -1904,7 +1933,7 @@ border:none;
 	  padding: 10px;
 	}
 	.coment-form input[type="submit"] {
-	  background: url(../images/mess.png) no-repeat 69px 14px;
+	  /* background: url(../images/mess.png) no-repeat 69px 14px; */
 	  width: 46%;
 	  }
 	.footer {
@@ -2198,7 +2227,7 @@ border:none;
 	  margin: 20px 0 0 0;
 	  }
 	.contact-right form input[type="submit"] {
-	  background: url(../images/mess.png) no-repeat 60px 14px;
+	  /* background: url(../images/mess.png) no-repeat 60px 14px; */
 	  width: 46%;
 	  }
 	.footer-top {
@@ -2363,13 +2392,13 @@ border:none;
 	}
 	.w-grid {
 	  float: left;
-	  width: 31.4%;
+	  /* width: 31.4%; */
 	  padding: 0;
-	  margin-right: 20px;
+	  /* margin-right: 20px; */
 	}
-	.w-grid:nth-child(3) {
+	/* .w-grid:nth-child(3) {
 	margin-right:0;
-	}
+	} */
 	.work-grid-info h4 {
 	  font-size: 16px;
 	}
@@ -2595,7 +2624,7 @@ border:none;
 	  padding: 6px 10px;
 	}
 	.contact-right form input[type="submit"] {
-	  background: url(../images/mess.png) no-repeat 37px 14px;
+	  /* background: url(../images/mess.png) no-repeat 37px 14px; */
 	  font-size: 16px;
 	  }
 	.footer-top {
@@ -2672,7 +2701,7 @@ border:none;
 	  float: left;
 	  width: 32.3%;
 	  padding: 0;
-	  margin-right: 9px;
+	  /* margin-right: 9px; */
 	}
 	.services-back {
 	  min-height: 33px;
@@ -2732,7 +2761,7 @@ border:none;
 	.contact-right form input[type="submit"] {
 	  height: 45px;
 	  width: 41%;
-	  background: url(../images/mess.png) no-repeat 26px 11px;
+	  /* background: url(../images/mess.png) no-repeat 26px 11px; */
 	  }
 	.footer-top {
 	  min-height: 75px;
@@ -2765,7 +2794,7 @@ border:none;
 	  font-size: 14px;
 	}
 	.coment-form input[type="submit"] {
-	  background: url(../images/mess.png) no-repeat 38px 14px;
+	  /* background: url(../images/mess.png) no-repeat 38px 14px; */
 	  width: 34%;
 	}
 	.recent-posts-info {
@@ -2833,7 +2862,7 @@ border:none;
 	  margin: 0 21px 21px 0;
 	}
 	.coment-form input[type="submit"] {
-	background: url(../images/mess.png) no-repeat 23px 10px;
+	/* background: url(../images/mess.png) no-repeat 23px 10px; */
 	  width: 36%;
 	  height: 45px;
 	  font-size: 14px;
@@ -3176,7 +3205,7 @@ border:none;
 	}
 	.contact-right form input[type="submit"] {
 	  width: 55%;
-	  background: url(../images/mess.png) no-repeat 14px 11px;
+	  /* background: url(../images/mess.png) no-repeat 14px 11px; */
 	}
 	.footer-top {
 	  min-height: 55px;
@@ -3240,7 +3269,7 @@ border:none;
     width: 100%;
 }
 .coment-form input[type="submit"] {
-  background: url(../images/mess.png) no-repeat 79px 12px;
+  /* background: url(../images/mess.png) no-repeat 79px 12px; */
   width: 100%;
   }
 .category ul li {
@@ -3426,7 +3455,7 @@ a.callbacks_nav.callbacks1_nav.prev {
 }
 .contact-right form input[type="submit"] {
   width: 100%;
-  background: url(../images/mess.png) no-repeat 81px 11px;
+  /* background: url(../images/mess.png) no-repeat 81px 11px; */
 }
 .contact {
   padding: 40px 0;
@@ -3496,5 +3525,3 @@ a.callbacks_nav.callbacks1_nav.prev {
 	  }
 }
 
-
-/*-- responsive media queries --*/

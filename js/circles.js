@@ -73,7 +73,7 @@
         return;
       }
 
-      duration = duration || 1500;
+      duration = duration || 2000;
 
       var step     = duration / this._interval,
         pathFactor = this._percentage / step,
